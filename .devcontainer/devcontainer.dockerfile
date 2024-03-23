@@ -18,3 +18,5 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
     && apt-get upgrade -qy \
     && apt-get install -qy tofu trivy
+
+RUN ln -s /usr/bin/tofu /usr/bin/terraform
